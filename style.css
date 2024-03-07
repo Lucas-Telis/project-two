@@ -1,122 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Faustina:wght@300&family=Tilt+Prism&display=swap');
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Faustina', serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Faustina', serif;
 }
 :root {
-    --primary: #77f23f;
-    --secondary: rgb(201, 255, 201);
-    --collection: #064800;
-    --tertiary: rgb(0, 30, 0);
-    --quaternary: beige;
+  --primary: #77f23f;
+  --secondary: rgb(201, 255, 201);
+  --collection: #064800;
+  --tertiary: rgb(0, 30, 0);
+  --quaternary: beige;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    max-width: 100%;
-    overflow-x: hidden
+  max-width: 100%;
+  overflow-x: hidden;
 }
 h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 h2 {
-    font-size: 2.25em;
+  font-size: 2.25em;
 }
 h3 {
-    font-size: 1.35em;
+  font-size: 1.35em;
 }
 p {
-    font-size: 1.10em;
+  font-size: 1.1em;
 }
-button{
-    background: linear-gradient(to right,#48e300 ,#064800);
-    background-color: #7dff42;
-    color: var(--quaternary);
-    
-    font-size: 20px;
-    font-weight: bold;
-    padding: 13px 19px;
-    border: 1px solid whitesmoke;
-    border-radius: 15px;
-    display: inline-block;
-    box-shadow: 5px 4px 8px 1px rgba(11.781356319043539,198.42188715934753,0,0.5);
+button {
+  background: linear-gradient(to right, #48e300, #064800);
+  background-color: #7dff42;
+  color: var(--quaternary);
+
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 19px;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 5px 4px 8px 1px
+    rgba(11.781356319043539, 198.42188715934753, 0, 0.5);
 }
-button:hover{
-    background: linear-gradient(to right,#77f23f ,#064400);
-    background-color: var(--primary)
+button:hover {
+  background: linear-gradient(to right, #77f23f, #064400);
+  background-color: var(--primary);
 }
 header {
-    background-color: var(--secondary);
-    box-shadow: 1px 1px 4px 0px rgba(11.781356319043539,198.42188715934753,0,0.5);
+  background-color: var(--secondary);
+  box-shadow: 1px 1px 4px 0px
+    rgba(11.781356319043539, 198.42188715934753, 0, 0.5);
 }
 header img {
-    cursor: pointer;
-    margin: 0;
-    padding: 0px 40px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0px 20px;
 }
 header > .container-menu {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 .lg {
-    margin: 0;
+  margin: 0;
 }
 header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 10px;
 }
 header a {
-    padding: 3px 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--tertiary)
+  padding: 3px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--tertiary);
 }
 a:hover {
-    color: #48e300;
+  color: #48e300;
 }
-
-
 
 /* ======== SearchFilters ======== */
 
-
-
 .container-filter {
-    display: flex;
+  display: flex;
 }
 .filter_options {
-    align-items: center;
-    padding-top: 10px;
-    position: absolute;
-    width: 100%;
-    padding: 10px;
-    background-color: var(--primary);
-  }
-  .price_filter {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
+  align-items: center;
+  padding-top: 10px;
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary);
+}
+.price_filter {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 
-.filter_options h3  {
+.filter_options h3 {
   text-align: center;
 }
 .price_input {
-    width: 60%;
+  width: 60%;
 }
-.filter_reset, .submit {
-    cursor: pointer;
-    font-size: 14px;
-    padding: 7px;
+.filter_reset,
+.submit {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 7px;
 }
 
 #seller {
@@ -124,73 +123,63 @@ a:hover {
   width: 60%;
 }
 
-
-
 /* ======== ProductsFilters ======== */
 
+.container_products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30%;
+}
 
+.div_products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5%;
+  cursor: pointer;
+  padding: 2%;
+  width: 70%;
+  margin-bottom: 5%;
+}
 
-  .container_products {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    padding-top: 30%;
-  }
+select:hover,
+input:hover {
+  background-color: var(--quaternary);
+  cursor: pointer;
+}
 
-  .div_products {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    border-radius: 5%;
-    cursor: pointer;
-    padding: 2%;
-    width: 70%;
-    margin-bottom: 5%;
-  }
-  
-  header li:hover {
-    background-color: var(---purple);
-    border-radius: 10%;
-  }
-  
-  select:hover, input:hover {
-    background-color: var(--quaternary);
-    cursor: pointer;
-  }
-  
-  .product_img {
-      width: 100%;
-  }
-  
-  .div_products:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-    box-shadow: 2px 4px 16px var(--collection);
-  }
+.product_img {
+  width: 100%;
+}
 
-  p {
-    color: #064800;
-  }
+.div_products:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  box-shadow: 2px 4px 16px var(--collection);
+}
 
+p {
+  color: #064800;
+}
 
-  /* ======== RESPONSIVE ======== */
-
+/* ======== RESPONSIVE ======== */
 
 @media screen and (min-width: 750px) {
-    header {
-        position: relative;
-        width: 100%;
-        height: 14%;
-    }
-    header .container-menu {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .container-menu nav {
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 10px;
-    }
+  header {
+    position: relative;
+    width: 100%;
+    height: 14%;
+  }
+  header .container-menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container-menu nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 10px;
+  }
   .filter_options {
     height: 100%;
     width: 30%;
@@ -240,4 +229,5 @@ a:hover {
     margin-right: 2%;
   }
 }
+
 
